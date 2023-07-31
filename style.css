@@ -41,16 +41,21 @@ margin-top: 35;
     display: flex;
    align-items: center;
    justify-content: center;
+   /* background-color: red; */
 }
 
 .section-2-item {
     margin-left: 60px;
     align-items: center;
-    justify-self: center;
+    justify-self: center;   
+    width: 250%;
 }
 .section-2-item span {
    margin-left: 10px;
+   color: #163C7D;
+   font-weight: 500;
 }
+
 
 #berita {
     /* height: 100vh; */
@@ -148,11 +153,16 @@ margin-top: 35;
     max-height: 100%;
 }
 
+.galeri-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .galeri-item{
     max-width: 100%;
     max-height: 100%;
     border: 10px;
-    margin-bottom: 45px;
 }
 
 #artikel {
@@ -322,14 +332,15 @@ footer span  {
         }
 
         .galeri-items {
+            margin-right: 10px;
+        }
+        .galeri-item{
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        .galeri-item{
-          
-            margin-right: 10px;
+         
+           
         }
 
         .galeri-item img{
