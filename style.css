@@ -166,6 +166,12 @@ margin-top: 35;
     
 }
 
+.selengkapnya {
+    margin: 0 auto;
+    color: rgb(225, 225, 225);
+    text-align: center;
+}
+
 #artikel {
     /* height: 90vh; */
 }
@@ -210,7 +216,7 @@ margin-top: 35;
 #tentang-kami .container .row p{
     font-size: 20px;
 }
-#tentang-kami .container img {
+.about-content-img img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -285,7 +291,7 @@ footer span  {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
     /* For mobile phones: */
     .section-2-item {
         margin-left: 10px;
@@ -335,7 +341,12 @@ footer span  {
 
         .galeri-item{
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+
 
         .galeri-item img{
             max-width: 100%;
@@ -358,6 +369,7 @@ footer span  {
         .box {
             margin: 0 auto;
             margin-top: 20px;
+            
             max-width: 90%;
         }
         .about-content-item {
@@ -400,22 +412,9 @@ footer span  {
         
   }
 
-  @media only screen and (max-width:835px)  { 
+  @media only screen and (min-width:600px) and (max-width:835px)  { 
 
-    .section-2-item {
-        margin-left: 10px;
-        align-items: center;
-        justify-self: center;
-        font-size: 10px;
-    }
-    .section-2-item img {
-        width: 70px;
-        height: 70px;
-    }
-    .section-2 {
-        margin-top: 35;
-        }
-        
+         
         .section-2-container{
             margin: 0 auto;
             height: 20vh;
@@ -424,25 +423,32 @@ footer span  {
            justify-content: center;
         }
     
-        .section-2-item span {
-           margin-left: 5px;
-           font-size: 20px;
-        }
-
-
-        .galeri-item{
+        .news-content-container {
             margin-top: 20px;
+            max-height: 280px;
+            overflow: hidden;
+            overflow-y: scroll;
         }
+        .card-container{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 10px ;
+            color: white;
+            position: absolute;
+            top:70%;    
+            backdrop-filter: blur(5px);
+        }
+
         .galeri-items {
             display: flex;
-            align-items: center;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         .galeri-item img{
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 95%;
+            max-height: 95%;
         }
+
 
         .page-button  {
             display: flex;
@@ -459,8 +465,10 @@ footer span  {
             max-height:100%;
         }
         .box {
-            margin-top: 20px;
             max-width: 90%;
+            max-height: 300px;
+            overflow: hidden;
+            overflow-y: scroll;
         }
         .artikel-img {
             max-width: 100%;
@@ -471,15 +479,15 @@ footer span  {
             position: static;
         }
         .content {
-            margin-top: 10px;
             position: static;
+            
         }
         
         .button-container {
             top: 95%;
             left: 70%;
             position: static;
-        
+            
         }
          .pengunjung {
             margin: 40px 0;
