@@ -76,6 +76,16 @@ margin-top: 35;
     overflow: hidden;
 }
 
+.card-container-galeri{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    color: white;
+    position: absolute;
+    top: 60%;    
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
 .carousel {
     position: relative;
 }
@@ -338,6 +348,19 @@ footer span  {
             top: 70%;    
             backdrop-filter: blur(5px);
         }
+        .card-container-galeri{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 20px ;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top: 70%;    
+            backdrop-filter: blur(5px);
+        }
+
+        .card-container-galeri h5 {
+            font-size: 15px;
+        }
 
         .galeri-item{
             margin-top: 20px;
@@ -436,6 +459,18 @@ footer span  {
             position: absolute;
             top:70%;    
             backdrop-filter: blur(5px);
+        }
+        .card-container-galeri{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 10px ;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top:70%;    
+            backdrop-filter: blur(5px);
+        }
+        .card-container-galeri h5 {
+            font-size: 10px;
         }
 
         .galeri-items {
